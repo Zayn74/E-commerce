@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+.crBg {
+  background-color: rgba(128, 128, 128, 0.122);
+}
+
+nav, footer {
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.item a {
+  color: black !important;
+}
+
+body, ul, li, p, a, label, input, div {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
+
+.h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+}
+
+.h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px !important;
+  font-weight: 300;
+}
+
+.h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px !important;
+}
+
+.featured {
+  background-color: rgb(233, 238, 245);
+}
+
+.layer {
+  display: none;
+}
+
+.product:hover .layer {
+  display: block;
+  transform: scale(1.05);
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.rowOne {
+  width: 300px;
+}/*# sourceMappingURL=allStyles.css.map */

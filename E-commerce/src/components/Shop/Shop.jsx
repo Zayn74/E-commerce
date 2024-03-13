@@ -27,24 +27,24 @@ export default function Home() {
   async function addMyProductBtn(id,idx){
 
     if(await addProductToCart(id)==true){
-      $('.succesMsg').fadeIn(300,function(){
+      $('.succesMsg').fadeToggle(300,function(){
         setTimeout(()=>{
-          $('.succesMsg').fadeOut(3000)
+          $('.succesMsg').fadeToggle(3000)
       },200)
     })
-    $(`#addBtn${idx}`).fadeOut(500)
-    $(`#rmvBtn${idx}`).fadeIn(500)
+    $(`#addBtn${idx}`).fadeToggle(500)
+    $(`#rmvBtn${idx}`).fadeToggle("slow")
 }}
 
 async function removeMyProductBtn(id,idx) {
   if (await removeProduct(id)==true) {
-    $('.removeMsg').fadeIn(300,function(){
+    $('.removeMsg').fadeToggle(300,function(){
       setTimeout(()=>{
-        $('.removeMsg').fadeOut(3000)
+        $('.removeMsg').fadeToggle(3000)
     },200)
   })
-  $(`#addBtn${idx}`).fadeIn(500)
-  $(`#rmvBtn${idx}`).fadeOut(500)
+  $(`#addBtn${idx}`).fadeToggle("slow")
+  $(`#rmvBtn${idx}`).fadeToggle(500)
 }}
 
 
